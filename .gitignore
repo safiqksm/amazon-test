@@ -5,3 +5,5 @@ amazon-test/bin/
 amazon-test/.idea
 amazon-test/lib/
 amazon-test/*.iml
+amazon-test/.classpath
+amazon-test/.project

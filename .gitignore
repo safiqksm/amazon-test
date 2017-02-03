@@ -1,7 +1,7 @@
-.metadata
-.recommenders
-RemoteSystemsTempFiles
-amazon-test/bin/*
+.metadata/
+.recommenders/
+RemoteSystemsTempFiles/
+amazon-test/bin/
 amazon-test/.idea
-amazon-test/lib
+amazon-test/lib/
 amazon-test/*.iml

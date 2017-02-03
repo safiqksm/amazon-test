@@ -8,3 +8,6 @@
 1486049718482	Rename local variable 'eachNumberOfMainList'
 1486070049362	Delete element
 1486070125933	Rename type 'Velocidade'
+1486139008909	Rename local variable 'listaPrincipal'
+1486139062008	Rename local variable 'mainList'
+1486139069042	Rename local variable 'listaDePares'

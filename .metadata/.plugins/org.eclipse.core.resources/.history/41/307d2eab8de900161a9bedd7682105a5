@@ -1,0 +1,19 @@
+package intefacetest;
+
+public class AcaoAnimal {
+	
+	
+	/*public void usaVelocidade(Veloz veloz) {
+		
+	}*/
+	
+	public void usVelocidade(Leopardo leopardo) {
+		leopardo.correRapido();
+	}
+	public void usVelocidade(Cachorro cachorro) {
+		cachorro.correRapido();
+	}
+	public void usVelocidade(Gato gato) {
+		gato.correRapido();
+	}
+}

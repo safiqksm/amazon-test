@@ -1,0 +1,5 @@
+1482273337273	Rename local variable 'i'
+1482274067144	Rename local variable 'index'
+1482274080692	Rename local variable 'i'
+1482274173632	Rename local variable 'indexWordToCompare'
+1482274540613	Extract method 'putWordsOnList'

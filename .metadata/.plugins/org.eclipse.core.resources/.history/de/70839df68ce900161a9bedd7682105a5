@@ -1,0 +1,11 @@
+package intefacetest;
+
+public class Cachorro implements Veloz {
+
+	@Override
+	public void correRapido() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

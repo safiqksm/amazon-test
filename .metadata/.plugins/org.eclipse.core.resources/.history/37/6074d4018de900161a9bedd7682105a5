@@ -1,0 +1,11 @@
+package intefacetest;
+
+public class Gato implements Veloz {
+
+	@Override
+	public void correRapido() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

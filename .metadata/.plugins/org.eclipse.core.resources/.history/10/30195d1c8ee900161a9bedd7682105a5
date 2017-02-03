@@ -1,0 +1,10 @@
+package intefacetest;
+
+public class Cachorro implements Veloz {
+
+	@Override
+	public void correRapido() {
+		System.out.println("O cachorro usa sua velocidade.");
+	}
+
+}

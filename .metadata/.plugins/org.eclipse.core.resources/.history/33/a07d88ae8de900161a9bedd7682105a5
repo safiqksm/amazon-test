@@ -1,0 +1,7 @@
+package intefacetest;
+
+public class Principal {
+	public static void main(String[] args) {
+		AcaoAnimal acaoAnimal = new AcaoAnimal();
+	}
+}

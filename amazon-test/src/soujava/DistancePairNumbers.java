@@ -1,24 +1,22 @@
 package soujava;
 
 import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.Collections;
 import java.util.List;
-import java.util.Map;
-
 
 public class DistancePairNumbers {
 
 	public List<Integer> calculateMinimalDistanceBetweenIndexes(List<Integer> mainListToSearchDistance, List<String> pairList) {
+		List<Integer> resultOfMinimalDistance = new ArrayList<>();
 		
 		for (String pair : pairList) {
 			
 			int[] pairsToBeFound = getPairNumbersAsInt(pair);
 			
-			findMinimalDistanceInList(mainListToSearchDistance, pairsToBeFound[0], pairsToBeFound[1]);
+			resultOfMinimalDistance.add(findMinimalDistanceInList(mainListToSearchDistance, pairsToBeFound[0], pairsToBeFound[1]));
 		}
 		
-		return null;
-		
+		return resultOfMinimalDistance;
 	}
 	
 	private int[] getPairNumbersAsInt(String pair) {
@@ -30,7 +28,7 @@ public class DistancePairNumbers {
 		return new int[]{firstNumberOfPair, secondNumberOfPair};
 	}
 
-	private void findMinimalDistanceInList(List<Integer> mainListToSearchDistance, int firstNumberOfPair, int secondNumberOfPair) {
+	private int findMinimalDistanceInList(List<Integer> mainListToSearchDistance, int firstNumberOfPair, int secondNumberOfPair) {
 		boolean isFistNumberFound = false;
 		boolean isSecondNumberFound = false;
 		
@@ -39,11 +37,7 @@ public class DistancePairNumbers {
 		int firstNumberPositionIndexFound = 0;
 		int secondNumberPositionIndexFound = 0;
 		
-		Map<String, Integer> resultMap = new HashMap<>();
-		
 		List<Integer> minimalDistanceBetweenNumbers = new ArrayList<>();
-		
-//		resultMap.put(key, value)
 		
 		for (int indexOfMainList = 0; indexOfMainList <=  mainListToSearchDistance.size(); indexOfMainList++) {
 			int distanceCount = 0;
@@ -63,6 +57,9 @@ public class DistancePairNumbers {
 					firstIndexFound = secondNumberPositionIndexFound;
 				}
 				
+				minimalDistanceBetweenNumbers.add(distanceCount);
+				
+				distanceCount = 0;
 				indexOfMainList = firstIndexFound + 1;
 			} else {
 				distanceCount++;
@@ -71,6 +68,7 @@ public class DistancePairNumbers {
 			indexOfMainList++;
 		}
 		
+		return Collections.min(minimalDistanceBetweenNumbers);
 	}
 
 }

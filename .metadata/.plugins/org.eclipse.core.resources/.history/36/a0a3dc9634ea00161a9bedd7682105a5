@@ -1,6 +1,5 @@
 package soujava;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -40,10 +39,6 @@ public class DistancePairNumbers {
 		int secondNumberPositionIndexFound = 0;
 		
 		Map<String, Integer> resultMap = new HashMap<>();
-		
-		List<Integer> minimalDistanceBetweenNumbers = new ArrayList<>();
-		
-//		resultMap.put(key, value)
 		
 		for (int indexOfMainList = 0; indexOfMainList <=  mainListToSearchDistance.size(); indexOfMainList++) {
 			int distanceCount = 0;

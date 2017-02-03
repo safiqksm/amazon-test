@@ -1,9 +1,6 @@
 package soujava;
 
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 
 public class DistancePairNumbers {
@@ -34,41 +31,21 @@ public class DistancePairNumbers {
 		boolean isFistNumberFound = false;
 		boolean isSecondNumberFound = false;
 		
-		int firstIndexFound = 0;
-		
 		int firstNumberPositionIndexFound = 0;
 		int secondNumberPositionIndexFound = 0;
 		
-		Map<String, Integer> resultMap = new HashMap<>();
-		
-		List<Integer> minimalDistanceBetweenNumbers = new ArrayList<>();
-		
-//		resultMap.put(key, value)
-		
-		for (int indexOfMainList = 0; indexOfMainList <=  mainListToSearchDistance.size(); indexOfMainList++) {
+		for (Integer numberOfMainList : mainListToSearchDistance) {
 			int distanceCount = 0;
 			
-			if (mainListToSearchDistance.get(indexOfMainList).equals(firstNumberOfPair) && !isFistNumberFound) {
-				firstNumberPositionIndexFound = indexOfMainList;
-				
+			if (numberOfMainList.equals(firstNumberOfPair) && !isFistNumberFound) {
 				isFistNumberFound = true;
-			} else if (mainListToSearchDistance.get(indexOfMainList).equals(secondNumberOfPair) && !isSecondNumberFound) {
-				secondNumberPositionIndexFound = indexOfMainList;
-
+			} else if (numberOfMainList.equals(secondNumberOfPair) && !isSecondNumberFound) {
 				isSecondNumberFound = true;
 			} else if (isFistNumberFound && isSecondNumberFound) {
-				if (firstNumberPositionIndexFound >= secondNumberPositionIndexFound) {
-					firstIndexFound = firstNumberPositionIndexFound;
-				} else {
-					firstIndexFound = secondNumberPositionIndexFound;
-				}
 				
-				indexOfMainList = firstIndexFound + 1;
 			} else {
 				distanceCount++;
 			}
-			
-			indexOfMainList++;
 		}
 		
 	}

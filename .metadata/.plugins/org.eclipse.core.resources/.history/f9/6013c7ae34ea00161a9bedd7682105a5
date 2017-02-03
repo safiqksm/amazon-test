@@ -43,7 +43,7 @@ public class DistancePairNumbers {
 		
 		List<Integer> minimalDistanceBetweenNumbers = new ArrayList<>();
 		
-//		resultMap.put(key, value)
+		resultMap.put(key, value)
 		
 		for (int indexOfMainList = 0; indexOfMainList <=  mainListToSearchDistance.size(); indexOfMainList++) {
 			int distanceCount = 0;

@@ -4,14 +4,16 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 
+import soujava.DistancePairNumbers;
+
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.runners.Parameterized.Parameters
+import static org.junit.runners.Parameterized.Parameters;
 
-@RunWith(Parameterized.class)
+@RunWith(Parameterized.class) 
 public class DistancePairNumbersTest {
 
     @Parameters
@@ -35,7 +37,8 @@ public class DistancePairNumbersTest {
         this.pairList = pairList;
         this.distances = distances;
     }
-
+    
+    @Test
     public void testCalculateDistance() {
         DistancePairNumbers dpn = new DistancePairNumbers();
         List<Integer> actualDistances = dpn.calculateMinimalDistanceBetweenIndexes(mainListToSearchDistance, pairList);

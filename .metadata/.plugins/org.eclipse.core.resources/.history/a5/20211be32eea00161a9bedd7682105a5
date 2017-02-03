@@ -1,0 +1,29 @@
+package soujava;
+
+import java.util.List;
+
+
+public class DistancePairNumbers {
+
+	public void calculateMinimalDistanceBetweenIndexes(List<Integer> mainListToSearchDistance, List<String> pairList) {
+		
+		for (String pair : pairList) {
+			
+			getPairNumbers();
+			
+			findMinimalDistanceInList(pair);
+			
+		}
+		
+	}
+
+	private void getPairNumbers() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private void findMinimalDistanceInList(String pair) {
+		
+	}
+
+}

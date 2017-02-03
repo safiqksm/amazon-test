@@ -11,3 +11,6 @@
 1486139008909	Rename local variable 'listaPrincipal'
 1486139062008	Rename local variable 'mainList'
 1486139069042	Rename local variable 'listaDePares'
+1486141269698	Rename local variable 'firstPositionIndexFoun'
+1486141395384	Rename local variable 'secondPositionIndexFound'
+1486141400900	Rename local variable 'firstPositionIndexFound'

@@ -9,7 +9,7 @@ import java.util.Collection;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.runners.Parameterized.Parameters
+import static org.junit.runners.Parameterized.Parameters;
 
 @RunWith(Parameterized.class)
 public class DistancePairNumbersTest {
@@ -36,6 +36,7 @@ public class DistancePairNumbersTest {
         this.distances = distances;
     }
 
+    @Test
     public void testCalculateDistance() {
         DistancePairNumbers dpn = new DistancePairNumbers();
         List<Integer> actualDistances = dpn.calculateMinimalDistanceBetweenIndexes(mainListToSearchDistance, pairList);

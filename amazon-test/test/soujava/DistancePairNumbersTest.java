@@ -19,7 +19,7 @@ public class DistancePairNumbersTest {
         return Arrays.asList(new Object[][] {
                 {
                     Arrays.asList(9, 1, 6, 2, 7, 1, 9, 7, 3),
-                    Arrays.asList("3 7", "1 2", "1 7", "9 6", "1 1", "9 2", "6 7", "2 7", "9 7", "9 5", "1 6"),
+                    Arrays.asList("3 7" , "1 2", "1 7", "9 6", "1 1", "9 2", "6 7", "2 7", "9 7", "9 5", "1 6"),
                     Arrays.asList(1, 2, 1, 2, 0, 3, 2, 1, 1, -1, 1)
                 }
         });
